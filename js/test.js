@@ -1,3 +1,4 @@
 // test.js
-const unused = 42
+const unusedVariable = 42
+const anotherVariable = "hello"
 console.log("Hello world")
