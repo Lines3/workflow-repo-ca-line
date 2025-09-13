@@ -1,7 +1,7 @@
 import { expect, describe, it, beforeEach } from "vitest";
 import { saveUser, getUsername } from "./storage";
 
-describe("Username storage functions", () => {
+describe("clear storage before each test", () => {
   beforeEach(() => {
     localStorage.clear();
   });
@@ -18,7 +18,7 @@ describe("Username storage functions", () => {
     it("retrieves the username from storage", () => {
       localStorage.setItem("user", JSON.stringify({ name: "Marie" }));
       const retrievedUsername = getUsername();
-      expect(retrievedUsername).toBe("Marie");
+      expect(retrievedUsername).toEqual("Marie");
     });
 
     it("returns null when no username exists", () => {
