@@ -129,7 +129,7 @@ For a folder:
 
   Run: 
   
-      npm init playwright@latest
+    npm init playwright@latest
 
   Answer these questions;
   - Do you want to use TypeScript? "No"
@@ -142,7 +142,7 @@ For a folder:
   Run the tests with these commands:
 Run in all browsers with headless mode:
 
-        npx playwright test
+    npx playwright test
 
 Run tests, open Playwrights interface and see results: 
 
