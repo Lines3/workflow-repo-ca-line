@@ -23,9 +23,17 @@ Run:
 
   Install necessary dependencies and choose you package manager. For this project npm was used.
 
-  - Run ESLint on the entire project: npx eslint
-  - Run ESLint on specific file: npx eslint myFolder/myFile.js
-  - Run ESLint on a directory: npx eslint myFolder/**
+Run ESLint on the entire project:
+        
+    npx eslint
+         
+Run ESLint on specific file: 
+    
+    npx eslint myFolder/myFile.js
+        
+Run ESLint on a directory: 
+
+    npx eslint myFolder/**
 
   This project use Tailwind configuration so eslint.config.mjs file need to be configured like this to avoid wanrings about undefined globals:
   
@@ -61,9 +69,18 @@ Run:
     }
 
   Run Prettier:
-    For the entire project: npx prettier . --write
-    For a single file: npx prettier --write myFolder/myFile.js
-    For a folder: npx prettier --write myFolder/
+For the entire project: 
+    
+        npx prettier . --write
+    
+For a single file: 
+
+        npx prettier --write myFolder/myFile.js
+    
+For a folder: 
+
+    npx prettier --write myFolder/
+
 
   Add this to package.json after installing ESLint and Prettier:
 
@@ -123,10 +140,21 @@ Run:
   A test-folder and a playwright.config.js file will be created. 
 
   Run the tests with these commands:
-  - Run in all browsers with headless mode: npx playwright test
-  - Run tests, open Playwrights interface and see results: npx playwright test --ui
-  - Runs tests while showing the browser while test runs: npx playwright test --headed
-  - Run tests step by step: npx playwright test --debug
+Run in all browsers with headless mode:
+
+        npx playwright test
+
+Run tests, open Playwrights interface and see results: 
+
+    npx playwright test --ui
+
+Runs tests while showing the browser while test runs: 
+
+    npx playwright test --headed
+    
+Run tests step by step: 
+
+    npx playwright test --debug
 
   Add this to playwright.config.js to configure where the website is located (add the right baseURL for your needs) and start live server when testing:
 
