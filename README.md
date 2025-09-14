@@ -14,11 +14,12 @@ Run:
     npm init @eslint/config@latest
 
   Answer these questions:  
-    - How would you like to use ESLint? · "To check syntax and find problems"
-    - What type of modules does your project use? · "JavaScript modules (import/export)"
-    - Which framework does your project use? · "None of these"
-    - Does your project use TypeScript? · "No"
-    - Where does your code run? · "Browser"
+
+  - How would you like to use ESLint? · "To check syntax and find problems"
+  - What type of modules does your project use? · "JavaScript modules (import/export)"
+  - Which framework does your project use? · "None of these"
+  - Does your project use TypeScript? · "No"
+  - Where does your code run? · "Browser"
 
   Install necessary dependencies and choose you package manager. For this project npm was used.
 
@@ -110,7 +111,8 @@ Run:
 ##Playwright
 
   Run: 
-  npm init playwright@latest
+  
+      npm init playwright@latest
 
   Answer these questions;
   - Do you want to use TypeScript? "No"
