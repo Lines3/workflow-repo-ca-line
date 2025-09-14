@@ -3,20 +3,22 @@ Workflow CA
 #Prerequisites:
 
 Run: 
-npm init -y
+
+    npm init -y
 
 #Installations:
 
 ##ESLint
   Run: 
-  npm init @eslint/config@latest
+  
+    npm init @eslint/config@latest
 
   Answer these questions:  
-    How would you like to use ESLint? · "To check syntax and find problems"
-    What type of modules does your project use? · "JavaScript modules (import/export)"
-    Which framework does your project use? · "None of these"
-    Does your project use TypeScript? · "No"
-    Where does your code run? · "Browser"
+    - How would you like to use ESLint? · "To check syntax and find problems"
+    - What type of modules does your project use? · "JavaScript modules (import/export)"
+    - Which framework does your project use? · "None of these"
+    - Does your project use TypeScript? · "No"
+    - Where does your code run? · "Browser"
 
   Install necessary dependencies and choose you package manager. For this project npm was used.
 
@@ -47,7 +49,8 @@ npm init -y
   ##Prettier
  
   Run: 
-  npm install -D prettier@3
+  
+    npm install -D prettier@3
 
   Create a config file for Prettier in the root of the project and add this:
 
@@ -71,7 +74,8 @@ npm init -y
 ##Pre-commit hooks/ Husky
 
   Run: 
-  npx mrm lint-staged
+  
+    npx mrm lint-staged
 
   Installing it will:
   - Install husky and lint-staged
@@ -81,7 +85,8 @@ npm init -y
 ##Vitest
 
    Run: 
-   npm install -D vitest
+   
+     npm install -D vitest
 
    Add test script to package.json like this:
    
@@ -90,7 +95,8 @@ npm init -y
     }
 
   Run: 
-  npm test
+ 
+    npm test
 
   Add this to vitest.config.js to exclude Playwright tests later on to avoid issues when running tests:
   
@@ -107,10 +113,10 @@ npm init -y
   npm init playwright@latest
 
   Answer these questions;
-    Do you want to use TypeScript? "No"
-    Where to put your end-to-end tests? "tests"
-    Add a GitHub Actions workflow? "No"
-    Install Playwright browsers? "Yes"
+  - Do you want to use TypeScript? "No"
+  - Where to put your end-to-end tests? "tests"
+  - Add a GitHub Actions workflow? "No"
+  - Install Playwright browsers? "Yes"
 
   A test-folder and a playwright.config.js file will be created. 
 
@@ -134,7 +140,8 @@ npm init -y
     });
 
   Run this to use live-server: 
-  npm i live-server -D
+  
+    npm i live-server -D
   
   Add this to package.json:
 
@@ -147,7 +154,8 @@ npm init -y
 ##.env
 
   Install dotenv: 
-  npm install dotenv --save-dev
+  
+    npm install dotenv --save-dev
   
   Create a .env file and add to gitignore-file
   
@@ -156,8 +164,9 @@ npm init -y
     require("dotenv").config();
 
   Required environmental variables:
-  TEST_USER_EMAIL=example@example.com
-  TEST_USER_PASSWORD=example
+  
+    TEST_USER_EMAIL=example@example.com
+    TEST_USER_PASSWORD=example
 
 #Recommendations
 
